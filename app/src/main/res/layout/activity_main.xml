@@ -19,9 +19,10 @@
 
         <ImageButton
             android:id="@+id/ivOpen"
-            android:layout_width="40dp"
-            android:layout_height="42dp"
-            android:src="@drawable/heart1_foreground" />
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_like"
+            android:background="#0000"/>
 
 
 

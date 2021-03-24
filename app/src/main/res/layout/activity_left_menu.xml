@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/LinearLayout"
-    android:layout_width="250dp"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="left"
     android:layout_marginLeft="20dp"
@@ -32,6 +32,7 @@
             android:paddingLeft="20dp"
             android:text="Back"
             android:textSize="17sp"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -57,6 +58,7 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:paddingLeft="20dp"
+            android:textColor="@color/white"
             android:text="Call"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -85,6 +87,7 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:paddingLeft="20dp"
+            android:textColor="@color/white"
             android:text="Search"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -115,6 +118,7 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:paddingLeft="20dp"
+            android:textColor="@color/white"
             android:text="Camera"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -143,6 +147,7 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:paddingLeft="20dp"
+            android:textColor="@color/white"
             android:text="Gallery"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -170,6 +175,7 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:paddingLeft="20dp"
+            android:textColor="@color/white"
             android:text="Place"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -198,6 +204,7 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:paddingLeft="20dp"
+            android:textColor="@color/white"
             android:text="Diary"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -227,6 +234,7 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:paddingLeft="20dp"
+            android:textColor="@color/white"
             android:text="Mp3-Player"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -255,6 +263,7 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:paddingLeft="20dp"
+            android:textColor="@color/white"
             android:text="Secret"
             android:textSize="17sp"
             android:textStyle="bold" />
