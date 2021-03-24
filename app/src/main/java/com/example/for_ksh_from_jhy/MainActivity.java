@@ -15,7 +15,8 @@ import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
-    private LinearLayout linearLayout, linearBack, linearSearch, linearCall, linearCamera, linearGallery, linearPlace, linearDiary, linearSecret;
+    private LinearLayout linearLayout, linearBack, linearSearch, linearCall, linearCamera,
+            linearGallery, linearPlace, linearDiary, linearMp3, linearSecret;
     private ImageButton ivOpen;
 
     @Override
@@ -94,6 +95,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        linearMp3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Music_Main.class);
+                startActivity(intent);
+            }
+        });
+
         linearSecret.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -116,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
         linearGallery = findViewById(R.id.linearGallery);
         linearPlace = findViewById(R.id.linearPlace);
         linearDiary = findViewById(R.id.linearDiary);
+        linearMp3 = findViewById(R.id.linearMp3);
         linearSecret = findViewById(R.id.linearSecret);
     }
 }

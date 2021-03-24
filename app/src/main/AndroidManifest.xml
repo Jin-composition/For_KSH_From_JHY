@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.for_ksh_from_jhy">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/img_unlike"
@@ -9,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.For_KSH_From_JHY">
+        <activity android:name=".Music_Main"/>
         <activity android:name=".Fragment_Main"/>
         <activity android:name=".MyDiary"/>
         <activity android:name=".Spinner_Main"/>
