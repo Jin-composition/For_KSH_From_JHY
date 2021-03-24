@@ -14,9 +14,8 @@ import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
-    private LinearLayout linearLayout, linearBack, linearSearch, linearCall, linearCamera, linearGallery, linearPlace, linearDiary;
-    private Button btnOpenMenu,  btnGraphicView;
-    private ImageView ivCamera;
+    private LinearLayout linearLayout, linearBack, linearSearch, linearCall, linearCamera, linearGallery, linearPlace, linearDiary, linearSecret;
+    private Button btnOpenMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +93,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        linearSecret.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Fragment_Main.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 
@@ -108,7 +115,6 @@ public class MainActivity extends AppCompatActivity {
         linearGallery = findViewById(R.id.linearGallery);
         linearPlace = findViewById(R.id.linearPlace);
         linearDiary = findViewById(R.id.linearDiary);
-//        btnCloseMenu = findViewById(R.id.btnCloseMenu);
-//        btnGraphicView = findViewById(R.id.btnGraphicView);
+        linearSecret = findViewById(R.id.linearSecret);
     }
 }

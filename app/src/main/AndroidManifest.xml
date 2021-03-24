@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.For_KSH_From_JHY">
+        <activity android:name=".Fragment_Main"/>
         <activity android:name=".MyDiary"/>
         <activity android:name=".Spinner_Main"/>
         <activity android:name=".Gallery_Main"/>

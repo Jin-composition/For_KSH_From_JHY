@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //페이지 속성을 상수화 시키는거 (통일 시키기)
+    <dimen name="pageMargin">20dp</dimen>
+    <dimen name="offset">20dp</dimen>
+    <dimen name="pageMarginAndOffset">40dp</dimen>
+    <dimen name="frameSize">420dp</dimen>
+
+</resources>
