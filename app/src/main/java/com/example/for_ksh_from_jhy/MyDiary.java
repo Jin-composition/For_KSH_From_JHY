@@ -117,4 +117,7 @@ public class MyDiary extends MainActivity {
         edtDiary = findViewById(R.id.edtDiary);
         btnMode = findViewById(R.id.btnMode);
     }
+
+
+
 }
