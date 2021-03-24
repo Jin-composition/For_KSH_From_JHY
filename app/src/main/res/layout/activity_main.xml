@@ -7,19 +7,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:layout_marginTop="10dp">
+    android:background="@drawable/background">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="50dp">
 
-        <Button
-            android:id="@+id/btnOpenMenu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="좀 그럴듯한 앱"
-            app:backgroundTint="#9CCC65" />
+
+        <ImageButton
+            android:id="@+id/ivOpen"
+            android:layout_width="40dp"
+            android:layout_height="42dp"
+            android:src="@drawable/heart1_foreground" />
+
+
+
 
     </LinearLayout>
 

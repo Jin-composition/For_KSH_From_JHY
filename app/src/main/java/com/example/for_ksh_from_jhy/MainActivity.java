@@ -9,13 +9,14 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private LinearLayout linearLayout, linearBack, linearSearch, linearCall, linearCamera, linearGallery, linearPlace, linearDiary, linearSecret;
-    private Button btnOpenMenu;
+    private ImageButton ivOpen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void eventHandlerFunc() {
-        btnOpenMenu.setOnClickListener(new View.OnClickListener() {
+        ivOpen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 drawerLayout.openDrawer(linearLayout);
@@ -107,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
     private void findViewByIdFunc() {
         drawerLayout = findViewById(R.id.drawerLayout);
         linearLayout = findViewById(R.id.LinearLayout);
-        btnOpenMenu = findViewById(R.id.btnOpenMenu);
+        ivOpen = findViewById(R.id.ivOpen);
         linearBack = findViewById(R.id.linearBack);
         linearSearch = findViewById(R.id.linearSearch);
         linearCamera = findViewById(R.id.linearCamera);
