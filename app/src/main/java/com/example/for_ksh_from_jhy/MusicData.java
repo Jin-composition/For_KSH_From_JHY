@@ -1,48 +1,90 @@
 package com.example.for_ksh_from_jhy;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import java.util.Objects;
 
 public class MusicData {
     private String id;
-    private String artists;
+    private String artist;
     private String title;
     private String albumArt;
     private String duration;
+    private int playCount;
+    private int liked;
 
-    public MusicData(String id, String artists, String title, String albumArt, String duration) {
+    public MusicData() {
+    }
+
+    public MusicData(String id, String artist, String title, String albumArt, String duration, int playCount, int liked) {
         this.id = id;
-        this.artists = artists;
+        this.artist = artist;
         this.title = title;
         this.albumArt = albumArt;
         this.duration = duration;
+        this.playCount = playCount;
+        this.liked = liked;
     }
 
-    public String getId() { return id;  }
-    public void setId(String id) {this.id = id;  }
+    public String getId() {
+        return id;
+    }
 
-    public String getArtists() {return artists;  }
-    public void setArtists(String artists) {this.artists = artists;  }
+    public void setId(String id) {
+        this.id = id;
+    }
 
-    public String getTitle() {return title;  }
-    public void setTitle(String title) {this.title = title;  }
+    public String getArtist() {
+        return artist;
+    }
 
-    public String getAlbumArt() {return albumArt;  }
-    public void setAlbumArt(String albumArt) {this.albumArt = albumArt;  }
+    public String getTitle() {
+        return title;
+    }
 
-    public String getDuration() {return duration;  }
-    public void setDuration(String duration) {this.duration = duration;  }
+    public String getAlbumArt() {
+        return albumArt;
+    }
 
+    public String getDuration() {
+        return duration;
+    }
+
+
+    public int getPlayCount() {
+        return playCount;
+    }
+
+    public void setPlayCount(int playCount) {
+        this.playCount = playCount;
+    }
+
+    public int getLiked() {
+        return liked;
+    }
+
+    public void setLiked(int liked) {
+        this.liked = liked;
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        MusicData musicData = (MusicData) o;
-        return Objects.equals(id, musicData.id) && Objects.equals(albumArt, musicData.albumArt);
+    public boolean equals(Object obj) {
+        boolean equal = false;
+
+        if(obj instanceof MusicData){
+            MusicData data = (MusicData) obj;
+            equal = (this.id).equals(data.getId());
+        }
+
+        return equal;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     public int hashCode() {
-        return Objects.hash(id, albumArt);
+        return Objects.hash(id, artist, title, albumArt, duration, playCount, liked);
     }
 }
-
